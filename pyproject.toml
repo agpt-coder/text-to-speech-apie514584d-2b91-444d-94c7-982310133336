@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "text-to-speech-api"
+version = "0.1.0"
+description = "The project entails building an endpoint that can accept plain text or SSML formatted input, convert this input into natural-sounding speech audio utilizing Python libraries, and allow the customization of various voice parameters such as voice type, speed, pitch, volume, and potentially other parameters like strategic pauses for enhanced clarity and emotional impact. The preferred Python package for the text-to-speech conversion process is pyttsx3 due to its offline capabilities and extensive customization features, including voice type (neutral preferred), rate (speed), and volume adjustments. Additionally, the generated audio file should be available in MP3 format, which suits the user's needs. Essential insights and requirements gathered from the interview process include the importance of customization in the text-to-speech process to create a more engaging and natural auditory experience. Libraries such as gTTS and SpeechRecognition were also identified as relevant for text-to-speech and speech-to-text conversions but were not selected due to the project's specific requirements and the need for offline functionality."
+authors = ["AutoGPT <info@agpt.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+bcrypt = "^3.2.0"
+fastapi = "*"
+passlib = "^1.7.4"
+prisma = "*"
+pydantic = "*"
+python-jose = "^3.3.0"
+pyttsx3 = "^2.90"
+uvicorn = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
